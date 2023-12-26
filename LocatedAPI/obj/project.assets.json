@@ -2274,11 +2274,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\Rastreamento\\LocatedAPI\\LocatedAPI.csproj",
+      "projectUniqueName": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPI\\LocatedAPI.csproj",
       "projectName": "LocatedAPI",
-      "projectPath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\Rastreamento\\LocatedAPI\\LocatedAPI.csproj",
+      "projectPath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPI\\LocatedAPI.csproj",
       "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\Rastreamento\\LocatedAPI\\obj\\",
+      "outputPath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

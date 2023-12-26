@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\Rastreamento\\LocatedAPP\\LocatedAPP.csproj",
+      "projectUniqueName": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\LocatedAPP.csproj",
       "projectName": "LocatedAPP",
-      "projectPath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\Rastreamento\\LocatedAPP\\LocatedAPP.csproj",
+      "projectPath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\LocatedAPP.csproj",
       "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\Rastreamento\\LocatedAPP\\obj\\",
+      "outputPath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

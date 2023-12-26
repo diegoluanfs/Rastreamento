@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hlu5gX3rFeBifQxbSyfpBRizXgjMXLiyouaDH62DYJ04/1yC4Sy6EIZJ+Ly2mj2HxE9zONAueIO2RM0YflhK1g==",
+  "dgSpecHash": "SLyKqGNvLi+ctsI0YNFaNUMrD1GzSLHUxD264JZ75Ptnt+x8reQAlYYhNBEXwelummfWlSZE2O2oYNYPUbJQ1g==",
   "success": true,
-  "projectFilePath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\Rastreamento\\LocatedAPI\\LocatedAPI.csproj",
+  "projectFilePath": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPI\\LocatedAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diego\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.1\\microsoft.aspnetcore.authentication.jwtbearer.6.0.1.nupkg.sha512",
