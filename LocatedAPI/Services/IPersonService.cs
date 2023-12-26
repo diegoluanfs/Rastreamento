@@ -1,0 +1,20 @@
+﻿using LocatedAPI.Models;
+using LocatedAPI.Models.DTO;
+
+namespace LocatedAPI.Services
+{
+    public interface IPersonService
+    {
+        Task<List<PersonResp>> GetAllPersonsAsync();
+        Task<PersonResp> GetPersonByIdAsync(int id);
+        Task<PersonResp> GetPersonByUsernameAsync(string username);
+        Task<bool> NameAlreadyExistsAsync(string name);
+        Task<bool> EmailAlreadyExistsAsync(string name);
+        Task<bool> ValidUserAndPassword(string username, string password);
+        Task<int> CreatePersonAsync(PersonSignUpReq person);
+        Task<bool> UpdatePersonAsync(PersonReq person);
+        Task<bool> DeletePersonAsync(int id);
+        Task<string> AuthenticateAsync(PersonSignInReq person);
+    }
+
+}

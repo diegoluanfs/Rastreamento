@@ -1,0 +1,13 @@
+﻿Add-Migration Initial:
+O comando Add-Migration Initial é usado no Entity Framework (EF) para criar uma nova migração no seu projeto. As migrações são scripts que representam as alterações no modelo de dados do seu aplicativo. Quando você executa este comando, o EF compara o modelo de dados atual com o modelo anterior e gera um script que descreve as alterações necessárias para atualizar o banco de dados para refletir o novo modelo. A palavra "Initial" na migração geralmente indica a primeira migração que configura o estado inicial do banco de dados.
+
+Update-Database:
+O comando Update-Database é usado no Entity Framework para aplicar as migrações pendentes ao banco de dados. Após criar uma migração usando Add-Migration, você utiliza este comando para efetivamente aplicar as alterações ao banco de dados. Isso implica criar ou modificar tabelas, índices, chaves estrangeiras, entre outros, conforme especificado nas migrações. O comando garante que o banco de dados esteja sincronizado com o modelo de dados atual do seu aplicativo.
+
+Em resumo, Add-Migration Initial é usado para criar uma nova migração representando alterações no modelo, enquanto Update-Database é utilizado para aplicar essas alterações ao banco de dados real. Essa abordagem permite a evolução controlada do esquema do banco de dados à medida que o aplicativo é desenvolvido e modificado ao longo do tempo.
+
+-> Add-Migration Initial
+-> Update-Database
+
+-> dotnet ef database update
+

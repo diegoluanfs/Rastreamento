@@ -1,0 +1,58 @@
+/*---------------------------*/
+/* Template default CSS
+/*---------------------------*/
+
+html,
+body {
+	overflow-y: hidden;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+}
+
+	/* Estilo para o corpo com imagem de fundo em tela cheia */
+	body.full-screen-bg {
+		margin: 0; /* Remova as margens para cobrir toda a tela */
+		padding: 0; /* Remova os preenchimentos para cobrir toda a tela */
+		background: url('../img/background/maps.jpg') center/cover no-repeat fixed;
+	}
+
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100vw;
+	height:100vh;
+	z-index: -1;
+}
+
+.navbar {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.text-square {
+	padding: 35px;
+}
+
+/* Centered square */
+.centered-square {
+	bottom: 0;
+	width: auto;
+	max-width: 90vw;
+	min-height: 90vh;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+}
+
+/* Adicione esta regra para remover o padding esquerdo e direito */
+.no-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
