@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\style_login.css"
     },
     {
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\dev.html",
+      "PackagePath": "staticwebassets\\dev.html"
+    },
+    {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\fonts\\Futura.woff",
       "PackagePath": "staticwebassets\\fonts\\Futura.woff"
     },
@@ -91,6 +95,10 @@
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\community-bg.jpg",
       "PackagePath": "staticwebassets\\img\\community-bg.jpg"
+    },
+    {
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\desenvolvendo.png",
+      "PackagePath": "staticwebassets\\img\\desenvolvendo.png"
     },
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\facebook.png",
@@ -329,6 +337,10 @@
       "PackagePath": "staticwebassets\\js\\map.js"
     },
     {
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\perfil.js",
+      "PackagePath": "staticwebassets\\js\\perfil.js"
+    },
+    {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
@@ -359,6 +371,10 @@
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\password.html",
       "PackagePath": "staticwebassets\\password.html"
+    },
+    {
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\perfil.html",
+      "PackagePath": "staticwebassets\\perfil.html"
     },
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\script_map.js",

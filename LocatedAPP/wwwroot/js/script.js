@@ -17,9 +17,6 @@ $(document).ready(function () {
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="./index.html" id="index">In&iacute;cio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./targets.html">Pontos</a>
-                </li>
             </ul>
             <form class="d-flex">
                 <div class="btn btn-success btn-login" id="login">Login</div>
@@ -38,6 +35,9 @@ $(document).ready(function () {
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="./index.html">In&iacute;cio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./perfil.html">Perfil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./targets.html">Pontos</a>
@@ -60,6 +60,10 @@ $(document).ready(function () {
 
     $('.btn-login').on('click', function () {
         window.location.href = "./login.html";
+    });
+
+    $('#recovery-password-access').on('click', function () {
+        window.location.href = "./dev.html";
     });
 
     $('.btn-logout').on('click', function () {

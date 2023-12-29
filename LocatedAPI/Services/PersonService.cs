@@ -19,10 +19,16 @@ namespace LocatedAPI.Services
             this.jWTAuthenticationManager = jWTAuthenticationManager;
         }
 
-        public async Task<List<PersonResp>> GetAllPersonsAsync()
+        public async Task<List<PersonResp>> GetAllPersonsAsync(PersonIdentifyReq? personIdentify)
         {
             try
             {
+                if(personIdentify.UserId != null)
+                {
+                    PersonResp person = await GetPersonByIdAsync(Int32.Parse(personIdentify.UserId));
+                    return new List<PersonResp> { person };
+                }
+
                 var persons = await personRepository.GetAllAsync();
 
                 if (persons == null || !persons.Any())

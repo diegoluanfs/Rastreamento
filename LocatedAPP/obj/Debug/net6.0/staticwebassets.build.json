@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "19J+oFD7UT4plDiJ/yevvnCSZe/mQEgxChOMum+PTrg=",
+  "Hash": "1cOK/gDs4U5qKPAO3EK6/J/p2NOxn6TVaYiAMn1f0Wc=",
   "Source": "LocatedAPP",
   "BasePath": "_content/LocatedAPP",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style_login.css"
+    },
+    {
+      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\dev.html",
+      "SourceId": "LocatedAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
+      "BasePath": "_content/LocatedAPP",
+      "RelativePath": "dev.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dev.html"
     },
     {
       "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\fonts\\Futura.woff",
@@ -406,6 +423,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\community-bg.jpg"
+    },
+    {
+      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\desenvolvendo.png",
+      "SourceId": "LocatedAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
+      "BasePath": "_content/LocatedAPP",
+      "RelativePath": "img/desenvolvendo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\desenvolvendo.png"
     },
     {
       "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\facebook.png",
@@ -1411,6 +1445,23 @@
       "OriginalItemSpec": "wwwroot\\js\\map.js"
     },
     {
+      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\perfil.js",
+      "SourceId": "LocatedAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
+      "BasePath": "_content/LocatedAPP",
+      "RelativePath": "js/perfil.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\perfil.js"
+    },
+    {
       "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\script.js",
       "SourceId": "LocatedAPP",
       "SourceType": "Discovered",
@@ -1545,6 +1596,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\password.html"
+    },
+    {
+      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\perfil.html",
+      "SourceId": "LocatedAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
+      "BasePath": "_content/LocatedAPP",
+      "RelativePath": "perfil.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\perfil.html"
     },
     {
       "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\script_map.js",

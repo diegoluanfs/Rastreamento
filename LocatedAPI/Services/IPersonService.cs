@@ -5,7 +5,7 @@ namespace LocatedAPI.Services
 {
     public interface IPersonService
     {
-        Task<List<PersonResp>> GetAllPersonsAsync();
+        Task<List<PersonResp>> GetAllPersonsAsync(PersonIdentifyReq? personIdentify);
         Task<PersonResp> GetPersonByIdAsync(int id);
         Task<PersonResp> GetPersonByUsernameAsync(string username);
         Task<bool> NameAlreadyExistsAsync(string name);

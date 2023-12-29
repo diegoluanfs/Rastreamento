@@ -36,7 +36,6 @@ public class TargetController : ControllerBase
         }
         catch (Exception ex)
         {
-            // Trate a exceção conforme necessário
             return StatusCode(500, "Erro interno do servidor");
         }
     }

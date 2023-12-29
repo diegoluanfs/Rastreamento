@@ -4,6 +4,7 @@ using LocatedAPI;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using LocatedAPI.Models.DTO;
+using System.Security.Claims;
 
 [Route("api")]
 [ApiController]
@@ -24,7 +25,11 @@ public class PersonController : ControllerBase
     {
         try
         {
-            var persons = await personService.GetAllPersonsAsync();
+
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var personIdentify = new PersonIdentifyReq { UserId = userId };
+
+            var persons = await personService.GetAllPersonsAsync(personIdentify);
 
             return Ok(new
             {

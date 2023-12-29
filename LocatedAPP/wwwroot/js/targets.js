@@ -27,7 +27,7 @@ $('.btn-target').on('click', function () {
             });
         }
     });
-});;
+});
 
 function GetPoints() {
     return new Promise(function (resolve, reject) {
