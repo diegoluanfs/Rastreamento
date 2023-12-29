@@ -20,21 +20,67 @@ public class PersonController : ControllerBase
 
     [Authorize]
     [HttpGet("persons")]
-    public async Task<ActionResult<List<Person>>> GetAllAsync()
+    public async Task<IActionResult> GetAllAsync()
     {
-        var persons = await personService.GetAllPersonsAsync();
-        return Ok(persons);
+        try
+        {
+            var persons = await personService.GetAllPersonsAsync();
+
+            return Ok(new
+            {
+                StatusCode = 200,
+                Message = "Consulta realizada com sucesso.",
+                Data = persons
+            });
+        }
+        catch (Exception ex)
+        {
+            var errorResponse = new ApiResp
+            {
+                StatusCode = 500, // 500 Internal Server Error
+                Message = ex.Message
+            };
+
+            return StatusCode(500, errorResponse);
+        }
     }
 
     [Authorize]
     [HttpGet("persons/{id}")]
-    public async Task<ActionResult<PersonResp>> GetByIdAsync(int id)
+    public async Task<IActionResult> GetByIdAsync(int id)
     {
-        var person = await personService.GetPersonByIdAsync(id);
-        if (person == null)
-            return NotFound("Person não encontrada!");
+        try
+        {
+            var person = await personService.GetPersonByIdAsync(id);
 
-        return Ok(person);
+            if (person == null)
+            {
+                var notFoundResponse = new ApiResp
+                {
+                    StatusCode = 404,
+                    Message = "Person não encontrada!"
+                };
+
+                return NotFound(notFoundResponse);
+            }
+
+            return Ok(new
+            {
+                StatusCode = 200,
+                Message = "Consulta realizada com sucesso.",
+                Data = person
+            });
+        }
+        catch (Exception ex)
+        {
+            var errorResponse = new ApiResp
+            {
+                StatusCode = 500, // 500 Internal Server Error
+                Message = ex.Message
+            };
+
+            return StatusCode(500, errorResponse);
+        }
     }
 
     [AllowAnonymous]
@@ -67,29 +113,79 @@ public class PersonController : ControllerBase
 
     [Authorize]
     [HttpPut("persons")]
-    public async Task<ActionResult<Person>> PutAsync([FromBody] PersonReq person)
+    public async Task<IActionResult> PutAsync([FromBody] PersonReq person)
     {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+        try
+        {
+            var success = await personService.UpdatePersonAsync(person);
 
-        var success = await personService.UpdatePersonAsync(person);
+            if (!success)
+            {
+                var notFoundResponse = new ApiResp
+                {
+                    StatusCode = 404,
+                    Message = "Perfil não atualizado!"
+                };
 
-        if (!success)
-            return NotFound("Person não encontrada!");
+                return NotFound(notFoundResponse);
+            }
 
-        return Ok(person);
+            return Ok(new
+            {
+                StatusCode = 200,
+                Message = "Perfil atualizado.",
+                Data = success
+            });
+        }
+        catch (Exception ex)
+        {
+            var errorResponse = new ApiResp
+            {
+                StatusCode = 500,
+                Message = ex.Message
+            };
+
+            return StatusCode(500, errorResponse);
+        }
     }
 
     [Authorize]
     [HttpDelete("persons/{id}")]
     public async Task<IActionResult> DeleteAsync(int id)
     {
-        var success = await personService.DeletePersonAsync(id);
+        try
+        {
+            var success = await personService.DeletePersonAsync(id);
 
-        if (!success)
-            return BadRequest("Person não encontrada");
+            if (!success)
+            {
+                var badRequestResponse = new ApiResp
+                {
+                    StatusCode = 400,
+                    Message = "Exclusão não realizada."
+                };
 
-        return Ok();
+                return BadRequest(badRequestResponse);
+            }
+
+            var response = new ApiResp
+            {
+                StatusCode = 200,
+                Message = "Exclusão realizada com sucesso."
+            };
+
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            var errorResponse = new ApiResp
+            {
+                StatusCode = 500,
+                Message = ex.Message
+            };
+
+            return StatusCode(500, errorResponse);
+        }
     }
 
     [AllowAnonymous]
@@ -104,7 +200,7 @@ public class PersonController : ControllerBase
             {
                 Token = token,
                 StatusCode = 200,
-                Message = "Registro criado com sucesso."
+                Message = "Login realizado com sucesso."
             };
 
             return Ok(response);
