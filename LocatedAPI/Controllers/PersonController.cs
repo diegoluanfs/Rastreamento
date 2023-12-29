@@ -38,20 +38,33 @@ public class PersonController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpPost("persons")]
-    public async Task<ActionResult<Person>> PostAsync([FromBody] PersonSignUpReq person)
+    [HttpPost("person")]
+    public async Task<IActionResult> PostAsync([FromBody] PersonSignUpReq person)
     {
         try
         {
             var createdPersonId = await personService.CreatePersonAsync(person);
-            return Created($"api/persons/{createdPersonId}", person);
+
+            var response = new ApiResp
+            {
+                StatusCode = 201,
+                Message = "Registro criado com sucesso."
+            };
+
+            return Ok(response);
         }
         catch (Exception ex)
         {
-            return BadRequest(ex);
+            var errorResponse = new ApiResp
+            {
+                StatusCode = 400,
+                Message = ex.Message
+            };
+
+            return BadRequest(errorResponse);
         }
     }
-    
+
     [Authorize]
     [HttpPut("persons")]
     public async Task<ActionResult<Person>> PutAsync([FromBody] PersonReq person)

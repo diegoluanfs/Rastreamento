@@ -1,367 +1,375 @@
 {
   "Files": [
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\account.html",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\account.html",
       "PackagePath": "staticwebassets\\account.html"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\css\\font-awesome.min.css",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\css\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\css\\media.css",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\css\\media.css",
       "PackagePath": "staticwebassets\\css\\media.css"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\css\\style.css",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\css\\style_login.css",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\css\\style_login.css",
       "PackagePath": "staticwebassets\\css\\style_login.css"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\fonts\\Futura.woff",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\fonts\\Futura.woff",
       "PackagePath": "staticwebassets\\fonts\\Futura.woff"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\fonts\\Futura1.woff",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\fonts\\Futura1.woff",
       "PackagePath": "staticwebassets\\fonts\\Futura1.woff"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\fonts\\WEB BASED RESULT PUBLICATION SYSTEM FOR EDUCATION BOARDS.pdf",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\fonts\\WEB BASED RESULT PUBLICATION SYSTEM FOR EDUCATION BOARDS.pdf",
       "PackagePath": "staticwebassets\\fonts\\WEB BASED RESULT PUBLICATION SYSTEM FOR EDUCATION BOARDS.pdf"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\icon-fonts\\fontawesome-webfont.eot",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\icon-fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\icon-fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\icon-fonts\\fontawesome-webfont.svg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\icon-fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\icon-fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\icon-fonts\\fontawesome-webfont.woff",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\icon-fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\icon-fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\icon-fonts\\fontawesome-webfont.woff2",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\icon-fonts\\fontawesome-webfont.woff2",
       "PackagePath": "staticwebassets\\icon-fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\attachment.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\attachment.jpg",
       "PackagePath": "staticwebassets\\img\\attachment.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\authors\\1.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\authors\\1.jpg",
       "PackagePath": "staticwebassets\\img\\authors\\1.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\authors\\2.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\authors\\2.jpg",
       "PackagePath": "staticwebassets\\img\\authors\\2.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\authors\\3.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\authors\\3.jpg",
       "PackagePath": "staticwebassets\\img\\authors\\3.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\authors\\4.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\authors\\4.jpg",
       "PackagePath": "staticwebassets\\img\\authors\\4.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\authors\\5.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\authors\\5.jpg",
       "PackagePath": "staticwebassets\\img\\authors\\5.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\authors\\6.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\authors\\6.jpg",
       "PackagePath": "staticwebassets\\img\\authors\\6.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\authors\\7.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\authors\\7.jpg",
       "PackagePath": "staticwebassets\\img\\authors\\7.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\authors\\8.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\authors\\8.jpg",
       "PackagePath": "staticwebassets\\img\\authors\\8.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\background\\maps.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\background\\maps.jpg",
       "PackagePath": "staticwebassets\\img\\background\\maps.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\community-bg.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\community-bg.jpg",
       "PackagePath": "staticwebassets\\img\\community-bg.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\facebook.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\facebook.png",
       "PackagePath": "staticwebassets\\img\\facebook.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\favicon.ico",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\favicon.ico"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\features\\1.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\features\\1.jpg",
       "PackagePath": "staticwebassets\\img\\features\\1.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\features\\2.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\features\\2.jpg",
       "PackagePath": "staticwebassets\\img\\features\\2.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\features\\3.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\features\\3.jpg",
       "PackagePath": "staticwebassets\\img\\features\\3.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\features\\4.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\features\\4.jpg",
       "PackagePath": "staticwebassets\\img\\features\\4.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\footer-logo.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\footer-logo.png",
       "PackagePath": "staticwebassets\\img\\footer-logo.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\footer-top-bg.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\footer-top-bg.png",
       "PackagePath": "staticwebassets\\img\\footer-top-bg.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\fundo.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\fundo.png",
       "PackagePath": "staticwebassets\\img\\fundo.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\github.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\github.png",
       "PackagePath": "staticwebassets\\img\\github.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\google.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\google.png",
       "PackagePath": "staticwebassets\\img\\google.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\icons\\heart.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\icons\\heart.png",
       "PackagePath": "staticwebassets\\img\\icons\\heart.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\icons\\star.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\icons\\star.png",
       "PackagePath": "staticwebassets\\img\\icons\\star.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\latest-blog\\1.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\latest-blog\\1.jpg",
       "PackagePath": "staticwebassets\\img\\latest-blog\\1.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\latest-blog\\2.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\latest-blog\\2.jpg",
       "PackagePath": "staticwebassets\\img\\latest-blog\\2.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\latest-blog\\3.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\latest-blog\\3.jpg",
       "PackagePath": "staticwebassets\\img\\latest-blog\\3.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\login.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\login.png",
       "PackagePath": "staticwebassets\\img\\login.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\logo.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\page-top-bg\\1.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\page-top-bg\\1.jpg",
       "PackagePath": "staticwebassets\\img\\page-top-bg\\1.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\page-top-bg\\2.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\page-top-bg\\2.jpg",
       "PackagePath": "staticwebassets\\img\\page-top-bg\\2.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\page-top-bg\\3.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\page-top-bg\\3.jpg",
       "PackagePath": "staticwebassets\\img\\page-top-bg\\3.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\page-top-bg\\4.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\page-top-bg\\4.jpg",
       "PackagePath": "staticwebassets\\img\\page-top-bg\\4.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\page-top-bg\\5.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\page-top-bg\\5.jpg",
       "PackagePath": "staticwebassets\\img\\page-top-bg\\5.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\pattern.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\pattern.png",
       "PackagePath": "staticwebassets\\img\\pattern.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game-bg.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game-bg.png",
       "PackagePath": "staticwebassets\\img\\recent-game-bg.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game\\1.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game\\1.jpg",
       "PackagePath": "staticwebassets\\img\\recent-game\\1.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game\\2.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game\\2.jpg",
       "PackagePath": "staticwebassets\\img\\recent-game\\2.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game\\3.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game\\3.jpg",
       "PackagePath": "staticwebassets\\img\\recent-game\\3.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game\\4.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game\\4.jpg",
       "PackagePath": "staticwebassets\\img\\recent-game\\4.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game\\5.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game\\5.jpg",
       "PackagePath": "staticwebassets\\img\\recent-game\\5.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game\\6.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game\\6.jpg",
       "PackagePath": "staticwebassets\\img\\recent-game\\6.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game\\7.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game\\7.jpg",
       "PackagePath": "staticwebassets\\img\\recent-game\\7.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game\\8.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game\\8.jpg",
       "PackagePath": "staticwebassets\\img\\recent-game\\8.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\recent-game\\big.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\recent-game\\big.jpg",
       "PackagePath": "staticwebassets\\img\\recent-game\\big.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review-bg-2.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review-bg-2.jpg",
       "PackagePath": "staticwebassets\\img\\review-bg-2.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review-bg.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review-bg.png",
       "PackagePath": "staticwebassets\\img\\review-bg.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\1.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\1.jpg",
       "PackagePath": "staticwebassets\\img\\review\\1.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\10.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\10.jpg",
       "PackagePath": "staticwebassets\\img\\review\\10.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\2.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\2.jpg",
       "PackagePath": "staticwebassets\\img\\review\\2.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\3.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\3.jpg",
       "PackagePath": "staticwebassets\\img\\review\\3.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\4.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\4.jpg",
       "PackagePath": "staticwebassets\\img\\review\\4.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\5.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\5.jpg",
       "PackagePath": "staticwebassets\\img\\review\\5.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\6.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\6.jpg",
       "PackagePath": "staticwebassets\\img\\review\\6.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\7.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\7.jpg",
       "PackagePath": "staticwebassets\\img\\review\\7.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\8.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\8.jpg",
       "PackagePath": "staticwebassets\\img\\review\\8.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\review\\9.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\review\\9.jpg",
       "PackagePath": "staticwebassets\\img\\review\\9.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\slider-1.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\slider-1.jpg",
       "PackagePath": "staticwebassets\\img\\slider-1.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\slider-2.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\slider-2.jpg",
       "PackagePath": "staticwebassets\\img\\slider-2.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\tournament\\1.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\tournament\\1.jpg",
       "PackagePath": "staticwebassets\\img\\tournament\\1.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\tournament\\2.jpg",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\tournament\\2.jpg",
       "PackagePath": "staticwebassets\\img\\tournament\\2.jpg"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\tournament\\3DLayer.obj",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\tournament\\3DLayer.obj",
       "PackagePath": "staticwebassets\\img\\tournament\\3DLayer.obj"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\twitter.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\twitter.png",
       "PackagePath": "staticwebassets\\img\\twitter.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\img\\user.png",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\img\\user.png",
       "PackagePath": "staticwebassets\\img\\user.png"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\index.html",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\accounts.js",
+      "PackagePath": "staticwebassets\\js\\accounts.js"
+    },
+    {
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\jquery-3.2.1.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\js\\jquery.marquee.min.js",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\jquery.marquee.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.marquee.min.js"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\js\\map.js",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\map.js",
       "PackagePath": "staticwebassets\\js\\map.js"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\js\\script.js",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\js\\targets.js",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\targets.js",
       "PackagePath": "staticwebassets\\js\\targets.js"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\login.html",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\login.html",
       "PackagePath": "staticwebassets\\login.html"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\map.html",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map - Cópia.html",
+      "PackagePath": "staticwebassets\\map - Cópia.html"
+    },
+    {
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map.html",
       "PackagePath": "staticwebassets\\map.html"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\mapComChamadas.html",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\mapComChamadas.html",
       "PackagePath": "staticwebassets\\mapComChamadas.html"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\mapExemplo.html",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\mapExemplo.html",
       "PackagePath": "staticwebassets\\mapExemplo.html"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\password.html",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\password.html",
       "PackagePath": "staticwebassets\\password.html"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\script_map.js",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\script_map.js",
       "PackagePath": "staticwebassets\\script_map.js"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\style.css",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\style.css",
       "PackagePath": "staticwebassets\\style.css"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\RastreamentoAPI\\LocatedAPP\\wwwroot\\targets.html",
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\targets.html",
       "PackagePath": "staticwebassets\\targets.html"
     },
     {
