@@ -15,6 +15,7 @@ ACCESS_TOKEN_MAPBOX = 'pk.eyJ1IjoiZGllZ29sdWFuZnMiLCJhIjoiY2xxZHJnOWE0MGV6MzJpcG
 const markers = [];
 
 var routeCoordinatesArray = []; // Nova variável para armazenar os dados das coordenadas das rotas
+var positionsDescription = [];
 
 if (valorArmazenado) {
     // Set Mapbox access token
@@ -47,6 +48,13 @@ if (valorArmazenado) {
                     name: 'Ponto ' + item.id,
                     color: item.color
                 };
+
+                var info = {
+                    idTarget: item.id,
+                    color: item.color
+                }
+
+                positionsDescription.push(info);
 
                 // Add locations to the array
                 locationsMax.push(locationStart);
@@ -197,8 +205,9 @@ function GetTargets() {
                 resolve(result);
             },
             error: function (error) {
-                reject(error);
-                // Display an error message using SweetAlert2
+
+                window.location.href = "./login.html";
+
                 Swal.fire({
                     position: "top-end",
                     icon: "error",
@@ -215,7 +224,7 @@ const markerPositions = [];
 const routesPositions = [];
 
 // Define o intervalo (em milissegundos)
-const intervalo = 100; // 5 segundos
+const intervalo = 1000; // 5 segundos
 
 function markersMoving() {
     const numberOfRoutes = routeCoordinatesArray.length;
@@ -227,55 +236,75 @@ function markersMoving() {
         for (let i = 0; i < numberOfRoutes; i++) {
             markerPositions.push(i);
         }
-        clearInterval(markersMove);
+        clearInterval(intervalo);
     }
-
-    console.log("markerPositions: ", markerPositions)
 }
 
 // Inicia o intervalo apenas se numberOfRoutes for menor ou igual a 0
 if (routeCoordinatesArray.length <= 0) {
-    const markersMove = setInterval(markersMoving, intervalo);
+    setInterval(markersMoving, intervalo);
 }
 
-// Função para atualizar as posições dos marcadores
+const vetorPartialPositions = []
+const routeLengthTotal = []
+const positionsFinished = []
+
 function updateMarkerPositions() {
     const numberOfRoutes = routeCoordinatesArray.length;
 
     for (let i = 0; i < numberOfRoutes; i++) {
         const route = routeCoordinatesArray[i];
 
-        console.log("routeCoordinatesArray[" + i + "]: ", routeCoordinatesArray[i])
-
         if (route.length > 0) {
-            const currentPointIndex = markerPositions[i];
 
-            // Certifica-se de que o índice está dentro dos limites da rota
-            const nextIndex = (currentPointIndex + 1) % route.length;
-
-            // Obtém as coordenadas da rota específica
-            const coordinates = route[nextIndex];
-
-            console.log("route: ", route)
-            console.log("coordinates: ", coordinates)
-
-            const lngLat = new mapboxgl.LngLat(coordinates[0], coordinates[1]);
-
-            // Verifica se o marcador correspondente existe antes de tentar atualizar
-            if (markers[i]) {
-                // Atualiza a posição do marcador
-                markers[i].setLngLat(lngLat);
-
-                // Atualiza o índice da próxima posição
-                markerPositions[i] = nextIndex;
+            if (positionsFinished.includes(i)) {
+                if (positionsFinished.length == numberOfRoutes) {
+                    clearInterval(idIntervalo);
+                }
             } else {
-                console.error('Marcador não definido para o índice ' + i);
-            }
 
+                const currentPointIndex = markerPositions[i];
+                const nextIndex = (currentPointIndex + 1) % route.length;
+
+                // Obtém as coordenadas da rota específica
+                const coordinates = route[nextIndex];
+
+                var partial = {
+                    id: i,
+                    coordenates: coordinates
+                }
+
+                vetorPartialPositions.push(partial);
+
+                const lngLat = new mapboxgl.LngLat(coordinates[0], coordinates[1]);
+
+                //console.log(`Rota ${i} - Posição Atual: ${currentPointIndex}, Próxima Posição: ${nextIndex}`);
+
+                // Verifica se o marcador correspondente existe antes de tentar atualizar
+                if (markers[i]) {
+                    // Atualiza a posição do marcador
+                    markers[i].setLngLat(lngLat);
+
+                    // Atualiza o índice da próxima posição
+                    markerPositions[i] = nextIndex;
+
+                    // Verifica se é a última posição
+                    if (nextIndex === route.length - 1) {
+                        positionsFinished.push(i);
+                    }
+                } else {
+                    console.error('Marcador não definido para o índice ' + i);
+                }
+            }
         }
+
+        // Combine os objetos dos dois vetores
+        const vetorCombinado = positionsDescription.map((item1, index) => {
+            return { ...item1, ...vetorPartialPositions[index] };
+        });
+        console.log("vetorCombinado: ", vetorCombinado);
     }
 }
 
 // Inicia a execução da função em intervalos regulares
 const idIntervalo = setInterval(updateMarkerPositions, intervalo);
-

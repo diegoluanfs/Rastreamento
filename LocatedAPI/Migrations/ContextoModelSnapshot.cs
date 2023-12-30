@@ -22,44 +22,6 @@ namespace LocatedAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("LocatedAPI.Models.Moviment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Color")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("IdPerson")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdTarget")
-                        .HasColumnType("int");
-
-                    b.Property<double>("LatitudeEnd")
-                        .HasColumnType("float");
-
-                    b.Property<double>("LatitudeStart")
-                        .HasColumnType("float");
-
-                    b.Property<double>("LongitudeEnd")
-                        .HasColumnType("float");
-
-                    b.Property<double>("LongitudeStart")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Moviment");
-                });
-
             modelBuilder.Entity("LocatedAPI.Models.Person", b =>
                 {
                     b.Property<int>("Id")
@@ -118,6 +80,38 @@ namespace LocatedAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Targets");
+                });
+
+            modelBuilder.Entity("LocatedAPI.Models.TargetRoute", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IdPerson")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdTarget")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Latitude")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Longitude")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Routes");
                 });
 #pragma warning restore 612, 618
         }

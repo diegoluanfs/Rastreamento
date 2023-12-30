@@ -92,6 +92,9 @@ builder.Services.AddScoped<IPersonService, PersonService>();
 builder.Services.AddScoped<ITargetRepository, TargetRepository>();
 builder.Services.AddScoped<ITargetService, TargetService>();
 
+builder.Services.AddScoped<IRouteRepository, RouteRepository>();
+builder.Services.AddScoped<IRouteService, RouteService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

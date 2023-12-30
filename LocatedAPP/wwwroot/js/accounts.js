@@ -50,8 +50,6 @@ $('.button').on('click', function () {
             footer: '<a href="#">Why do I have this issue?</a>'
         });
     } else {
-        console.log("chamado o ajax")
-
         var username = $('#username').val();
         var email = $('#email').val();
         var password = $('#password').val();
@@ -61,8 +59,6 @@ $('.button').on('click', function () {
             email: email,
             password: password
         };
-
-        console.log("dataToSend: ", dataToSend)
 
         $.ajax({
             url: url_base + '/api/person',

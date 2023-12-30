@@ -10,26 +10,6 @@ namespace LocatedAPI.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Moviment",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    LatitudeStart = table.Column<double>(type: "float", nullable: false),
-                    LongitudeStart = table.Column<double>(type: "float", nullable: false),
-                    LatitudeEnd = table.Column<double>(type: "float", nullable: false),
-                    LongitudeEnd = table.Column<double>(type: "float", nullable: false),
-                    IdPerson = table.Column<int>(type: "int", nullable: false),
-                    IdTarget = table.Column<int>(type: "int", nullable: false),
-                    Color = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Created = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Moviment", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Persons",
                 columns: table => new
                 {
@@ -42,6 +22,24 @@ namespace LocatedAPI.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Persons", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Routes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IdTarget = table.Column<int>(type: "int", nullable: false),
+                    IdPerson = table.Column<int>(type: "int", nullable: false),
+                    Color = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Latitude = table.Column<double>(type: "float", nullable: false),
+                    Longitude = table.Column<double>(type: "float", nullable: false),
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Routes", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -67,10 +65,10 @@ namespace LocatedAPI.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Moviment");
+                name: "Persons");
 
             migrationBuilder.DropTable(
-                name: "Persons");
+                name: "Routes");
 
             migrationBuilder.DropTable(
                 name: "Targets");
