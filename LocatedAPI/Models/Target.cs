@@ -9,6 +9,7 @@
         public double LongitudeEnd { get; set; }
         public int IdPerson { get; set; }
         public string Color { get; set; }
+        public bool Started { get; set; }
         public DateTime Created { get; set; }
     }
 }

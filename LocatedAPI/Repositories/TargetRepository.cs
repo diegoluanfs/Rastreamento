@@ -60,7 +60,7 @@ namespace LocatedAPI.Repositories
             {
                 return await contexto.Targets
                     .AsNoTracking()
-                    .Where(t => t.IdPerson == personId)
+                    .Where(t => t.IdPerson == personId && t.Started == false)
                     .ToListAsync();
             }
             catch (Exception ex)
@@ -75,7 +75,7 @@ namespace LocatedAPI.Repositories
             {
                 return await contexto.Targets
                     .AsNoTracking()
-                    .FirstOrDefaultAsync(p => p.Id == id && p.IdPerson == personId);
+                    .FirstOrDefaultAsync(t => t.Id == id && t.IdPerson == personId);
             }
             catch (Exception ex)
             {

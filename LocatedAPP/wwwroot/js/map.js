@@ -224,7 +224,7 @@ const markerPositions = [];
 const routesPositions = [];
 
 // Define o intervalo (em milissegundos)
-const intervalo = 2000; // 5 segundos
+const intervalo = 100; // 5 segundos
 
 function markersMoving() {
     const numberOfRoutes = routeCoordinatesArray.length;
@@ -297,27 +297,13 @@ function updateMarkerPositions() {
 
                 vetorPartialPositions.push(partial);
 
-                // Combine os objetos dos dois vetores
-
-                // Combine os dois arrays usando a função map
-                let vetorCombinado = positionsDescription.map((item1, index) => {
-                    // Adiciona as propriedades correspondentes do vetorPartialPositions
-                    return {
-                        ...item1,
-                        ...vetorPartialPositions[index]
-                    };
-                });
-
-                //console.log("partial: ", partial)
-                console.log("vetorCombinado: ", vetorCombinado);
-
-                SaveData(vetorCombinado);
+                SaveData(partial, positionsDescription);
             }
         }
     }
 }
 
-function SaveData(vetorCombinado) {
+function SaveData(partial, positionsDescription) {
 
     var token = localStorage.getItem('Token-Located');
     var headers = {
@@ -325,36 +311,33 @@ function SaveData(vetorCombinado) {
         'Content-Type': 'application/json'
     };
 
-    for (let i = 0; i < vetorCombinado.length; i++) {
-
-        var vetorReq = {
-            "idTarget": vetorCombinado[i].idTarget,
-            "color": vetorCombinado[i].color,
-            "id": vetorCombinado[i].id,
-            "latitude": vetorCombinado[i].latitude,
-            "longitude": vetorCombinado[i].longitude
-        }
-
-        $.ajax({
-            url: url_base + '/api/route',
-            type: 'POST',
-            headers: headers,
-            contentType: 'application/json',
-            data: JSON.stringify(vetorReq),
-            success: function (result) {
-                //console.log("result: ", result);
-            },
-            error: function (error) {
-                Swal.fire({
-                    position: "top-end",
-                    icon: "error",
-                    title: error.responseJSON.message,
-                    showConfirmButton: false,
-                    timer: 2500
-                });
-            }
-        });
+    var vetorReq = {
+        "idTarget": positionsDescription[partial.id].idTarget,
+        "color": positionsDescription[partial.id].color,
+        "id": partial.id,
+        "latitude": partial.latitude,
+        "longitude": partial.longitude
     }
+
+    $.ajax({
+        url: url_base + '/api/route',
+        type: 'POST',
+        headers: headers,
+        contentType: 'application/json',
+        data: JSON.stringify(vetorReq),
+        success: function (result) {
+            //console.log("result: ", result);
+        },
+        error: function (error) {
+            Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: error.responseJSON.message,
+                showConfirmButton: false,
+                timer: 2500
+            });
+        }
+    });
 }
 
 
