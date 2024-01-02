@@ -31,18 +31,34 @@ namespace LocatedAPI.Repositories
             }
         }
 
-        public async Task<TargetRoute> GetRouteByIdAsync(int id, int personId)
+        public async Task<List<TargetRoute>> GetRouteByIdAsync(int idTarget, int personId)
         {
             try
             {
                 return await contexto.Routes
                     .AsNoTracking()
-                    .FirstOrDefaultAsync(p => p.IdPerson == id && p.IdPerson == personId);
+                    .Where(p => p.IdTarget == idTarget && p.IdPerson == personId)
+                    .ToListAsync();
             }
             catch (Exception ex)
             {
-                throw new Exception($"Houve um erro ao buscar o route com o ID {id} para o person com o ID {personId}", ex);
+                throw new Exception($"Houve um erro ao buscar o route com o ID {idTarget} para o person com o ID {personId}", ex);
             }
         }
+
+        public async Task<int> SaveRouteAsync(TargetRoute targetRoute)
+        {
+            try
+            {
+                await contexto.Routes.AddAsync(targetRoute);
+                await contexto.SaveChangesAsync();
+                return targetRoute.Id;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Houve um erro ao criar a target", ex);
+            }
+        }
+
     }
 }

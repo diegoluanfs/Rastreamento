@@ -333,6 +333,10 @@
       "PackagePath": "staticwebassets\\js\\jquery.marquee.min.js"
     },
     {
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\map-target.js",
+      "PackagePath": "staticwebassets\\js\\map-target.js"
+    },
+    {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\map.js",
       "PackagePath": "staticwebassets\\js\\map.js"
     },
@@ -353,20 +357,12 @@
       "PackagePath": "staticwebassets\\login.html"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map - Cópia.html",
-      "PackagePath": "staticwebassets\\map - Cópia.html"
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map-target.html",
+      "PackagePath": "staticwebassets\\map-target.html"
     },
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map.html",
       "PackagePath": "staticwebassets\\map.html"
-    },
-    {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\mapComChamadas.html",
-      "PackagePath": "staticwebassets\\mapComChamadas.html"
-    },
-    {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\mapExemplo.html",
-      "PackagePath": "staticwebassets\\mapExemplo.html"
     },
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\password.html",

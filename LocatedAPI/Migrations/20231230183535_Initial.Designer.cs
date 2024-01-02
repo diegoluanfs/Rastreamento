@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LocatedAPI.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20231230132518_Initial")]
+    [Migration("20231230183535_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

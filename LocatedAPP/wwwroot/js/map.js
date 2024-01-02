@@ -173,12 +173,12 @@ if (valorArmazenado) {
                         }
                     });
                 }).catch(error => {
-                    console.error(error);
+                    console.error("error: ", error);
                 });
             }
         });
     }).catch(function (error) {
-        console.error(error);
+        console.error("error: ", error);
     });
 } else {
     console.log("não existe token")
@@ -224,7 +224,7 @@ const markerPositions = [];
 const routesPositions = [];
 
 // Define o intervalo (em milissegundos)
-const intervalo = 1000; // 5 segundos
+const intervalo = 2000; // 5 segundos
 
 function markersMoving() {
     const numberOfRoutes = routeCoordinatesArray.length;
@@ -245,7 +245,7 @@ if (routeCoordinatesArray.length <= 0) {
     setInterval(markersMoving, intervalo);
 }
 
-const vetorPartialPositions = []
+let vetorPartialPositions = []
 const routeLengthTotal = []
 const positionsFinished = []
 
@@ -256,6 +256,8 @@ function updateMarkerPositions() {
         const route = routeCoordinatesArray[i];
 
         if (route.length > 0) {
+
+            let partial = []
 
             if (positionsFinished.includes(i)) {
                 if (positionsFinished.length == numberOfRoutes) {
@@ -269,16 +271,13 @@ function updateMarkerPositions() {
                 // Obtém as coordenadas da rota específica
                 const coordinates = route[nextIndex];
 
-                var partial = {
-                    id: i,
-                    coordenates: coordinates
-                }
-
-                vetorPartialPositions.push(partial);
-
                 const lngLat = new mapboxgl.LngLat(coordinates[0], coordinates[1]);
 
-                //console.log(`Rota ${i} - Posição Atual: ${currentPointIndex}, Próxima Posição: ${nextIndex}`);
+                partial = {
+                    id: i,
+                    latitude: coordinates[1],
+                    longitude: coordinates[0]
+                }
 
                 // Verifica se o marcador correspondente existe antes de tentar atualizar
                 if (markers[i]) {
@@ -295,16 +294,69 @@ function updateMarkerPositions() {
                 } else {
                     console.error('Marcador não definido para o índice ' + i);
                 }
+
+                vetorPartialPositions.push(partial);
+
+                // Combine os objetos dos dois vetores
+
+                // Combine os dois arrays usando a função map
+                let vetorCombinado = positionsDescription.map((item1, index) => {
+                    // Adiciona as propriedades correspondentes do vetorPartialPositions
+                    return {
+                        ...item1,
+                        ...vetorPartialPositions[index]
+                    };
+                });
+
+                //console.log("partial: ", partial)
+                console.log("vetorCombinado: ", vetorCombinado);
+
+                SaveData(vetorCombinado);
             }
         }
-
-        // Combine os objetos dos dois vetores
-        const vetorCombinado = positionsDescription.map((item1, index) => {
-            return { ...item1, ...vetorPartialPositions[index] };
-        });
-        console.log("vetorCombinado: ", vetorCombinado);
     }
 }
+
+function SaveData(vetorCombinado) {
+
+    var token = localStorage.getItem('Token-Located');
+    var headers = {
+        'Authorization': 'Bearer ' + token,
+        'Content-Type': 'application/json'
+    };
+
+    for (let i = 0; i < vetorCombinado.length; i++) {
+
+        var vetorReq = {
+            "idTarget": vetorCombinado[i].idTarget,
+            "color": vetorCombinado[i].color,
+            "id": vetorCombinado[i].id,
+            "latitude": vetorCombinado[i].latitude,
+            "longitude": vetorCombinado[i].longitude
+        }
+
+        $.ajax({
+            url: url_base + '/api/route',
+            type: 'POST',
+            headers: headers,
+            contentType: 'application/json',
+            data: JSON.stringify(vetorReq),
+            success: function (result) {
+                //console.log("result: ", result);
+            },
+            error: function (error) {
+                Swal.fire({
+                    position: "top-end",
+                    icon: "error",
+                    title: error.responseJSON.message,
+                    showConfirmButton: false,
+                    timer: 2500
+                });
+            }
+        });
+    }
+}
+
 
 // Inicia a execução da função em intervalos regulares
 const idIntervalo = setInterval(updateMarkerPositions, intervalo);

@@ -23,7 +23,7 @@ public class RouteController : ControllerBase
 
     [Authorize]
     [HttpGet("routes")]
-    public async Task<ActionResult<List<Microsoft.AspNetCore.Routing.Route>>> GetAllRoutesAsync()
+    public async Task<ActionResult<List<TargetRoute>>> GetAllRoutesAsync()
     {
         try
         {
@@ -41,15 +41,15 @@ public class RouteController : ControllerBase
     }
 
     [Authorize]
-    [HttpGet("route/{id}")]
-    public async Task<ActionResult<Microsoft.AspNetCore.Routing.Route>> GetRouteByIdAsync(int id)
+    [HttpGet("route/{idTarget}")]
+    public async Task<ActionResult<List<TargetRoute>>> GetRouteByIdAsync(int idTarget)
     {
         try
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var personIdentify = new PersonIdentifyReq { UserId = userId };
 
-            var route = await routeService.GetRouteByIdAsync(id, personIdentify);
+            var route = await routeService.GetRouteByIdAsync(idTarget, personIdentify);
 
             if (route == null)
             {
@@ -60,6 +60,35 @@ public class RouteController : ControllerBase
         }
         catch (Exception ex)
         {
+            // Trate a exceção conforme necessário
+            return StatusCode(500, "Erro interno do servidor");
+        }
+    }
+
+    [Authorize]
+    [HttpPost("route")]
+    public async Task<ActionResult<Route>> CreateRouteAsync(RouteTargetReq routeTargetReq)
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                return BadRequest("Não foi possível obter o ID do usuário autenticado.");
+            }
+
+            var personIdentify = new PersonIdentifyReq { UserId = userId };
+
+            var createdRouteId = await routeService.SaveRouteAsync(personIdentify, routeTargetReq);
+
+            return Ok(createdRouteId);
+        }
+        catch (Exception ex)
+        {
+            // Logue a exceção para análise
+            Console.WriteLine(ex);
+
             // Trate a exceção conforme necessário
             return StatusCode(500, "Erro interno do servidor");
         }

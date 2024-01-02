@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1cOK/gDs4U5qKPAO3EK6/J/p2NOxn6TVaYiAMn1f0Wc=",
+  "Hash": "X0WH+5K5uHbBLkyrJ4a5iVmuXDA0E1QWwve61FCDth0=",
   "Source": "LocatedAPP",
   "BasePath": "_content/LocatedAPP",
   "Mode": "Default",
@@ -1445,6 +1445,23 @@
       "OriginalItemSpec": "wwwroot\\js\\map.js"
     },
     {
+      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\map-target.js",
+      "SourceId": "LocatedAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
+      "BasePath": "_content/LocatedAPP",
+      "RelativePath": "js/map-target.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\map-target.js"
+    },
+    {
       "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\perfil.js",
       "SourceId": "LocatedAPP",
       "SourceType": "Discovered",
@@ -1513,23 +1530,6 @@
       "OriginalItemSpec": "wwwroot\\login.html"
     },
     {
-      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map - Cópia.html",
-      "SourceId": "LocatedAPP",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
-      "BasePath": "_content/LocatedAPP",
-      "RelativePath": "map - Cópia.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\map - Cópia.html"
-    },
-    {
       "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map.html",
       "SourceId": "LocatedAPP",
       "SourceType": "Discovered",
@@ -1547,12 +1547,12 @@
       "OriginalItemSpec": "wwwroot\\map.html"
     },
     {
-      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\mapComChamadas.html",
+      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map-target.html",
       "SourceId": "LocatedAPP",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
       "BasePath": "_content/LocatedAPP",
-      "RelativePath": "mapComChamadas.html",
+      "RelativePath": "map-target.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1561,24 +1561,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\mapComChamadas.html"
-    },
-    {
-      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\mapExemplo.html",
-      "SourceId": "LocatedAPP",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
-      "BasePath": "_content/LocatedAPP",
-      "RelativePath": "mapExemplo.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\mapExemplo.html"
+      "OriginalItemSpec": "wwwroot\\map-target.html"
     },
     {
       "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\password.html",

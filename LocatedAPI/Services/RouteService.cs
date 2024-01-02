@@ -33,25 +33,37 @@ namespace LocatedAPI.Services
             }
         }
 
-        public async Task<TargetRoute> GetRouteByIdAsync(int id, PersonIdentifyReq personIdentify)
+        public async Task<List<TargetRoute>> GetRouteByIdAsync(int idTarget, PersonIdentifyReq personIdentify)
         {
             try
             {
                 int personId = int.TryParse(personIdentify.UserId, out int userId) ? userId : default(int);
 
-                TargetRoute route = await routeRepository.GetRouteByIdAsync(id, personId);
-                if (route == null)
-                {
-                    return null;
-                }
-
+                var route = await routeRepository.GetRouteByIdAsync(idTarget, personId);
+                
                 return route;
             }
             catch (Exception ex)
             {
-                throw new Exception($"Houve um erro ao buscar a pessoa com o ID {id}", ex);
+                throw new Exception($"Houve um erro ao buscar a pessoa com o ID {idTarget}", ex);
             }
         }
-        
+
+        public async Task<int> SaveRouteAsync(PersonIdentifyReq personIdentify, RouteTargetReq routeTargetReq)
+        {
+            var targetRoute = new TargetRoute();
+
+            targetRoute.IdPerson = int.TryParse(personIdentify.UserId, out int userId) ? userId : 0;
+            targetRoute.IdTarget = routeTargetReq.IdTarget ?? 0;
+            targetRoute.Color = routeTargetReq.Color;
+            targetRoute.Latitude = routeTargetReq.Latitude ?? 0;
+            targetRoute.Longitude = routeTargetReq.Longitude ?? 0;
+            targetRoute.Created = DateTime.UtcNow;
+
+            var resp = await routeRepository.SaveRouteAsync(targetRoute);
+            return resp;
+        }
+
+
     }
 }
