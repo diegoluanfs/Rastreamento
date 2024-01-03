@@ -54,6 +54,7 @@ namespace LocatedAPI.Migrations
                     LongitudeEnd = table.Column<double>(type: "float", nullable: false),
                     IdPerson = table.Column<int>(type: "int", nullable: false),
                     Color = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Started = table.Column<bool>(type: "bit", nullable: false),
                     Created = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>

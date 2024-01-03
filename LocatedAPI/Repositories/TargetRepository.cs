@@ -54,7 +54,66 @@ namespace LocatedAPI.Repositories
             }
         }
 
+        public async Task<bool> UpdateStartedAsync(List<int> targetIds)
+        {
+            try
+            {
+                var targetsToUpdate = await contexto.Targets
+                    .Where(t => targetIds.Contains(t.Id))
+                    .ToListAsync();
+
+                if (targetsToUpdate.Any())
+                {
+                    foreach (var target in targetsToUpdate)
+                    {
+                        target.Started = true;
+                    }
+
+                    await contexto.SaveChangesAsync();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Houve um erro ao atualizar o campo 'started'", ex);
+            }
+        }
+
         public async Task<List<Target>> GetAllTargetsAsync(int personId)
+        {
+            try
+            {
+                return await contexto.Targets
+                    .AsNoTracking()
+                    .Where(t => t.IdPerson == personId)
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Houve um erro ao buscar todos os targets para o person com o ID {personId}", ex);
+            }
+        }
+        
+        public async Task<List<Target>> GetAllTargetsToDashboardAsync(int personId)
+        {
+            try
+            {
+                return await contexto.Targets
+                    .AsNoTracking()
+                    .Where(t => t.IdPerson == personId)
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Houve um erro ao buscar todos os targets para o person com o ID {personId}", ex);
+            }
+        }
+        
+        public async Task<List<Target>> GetAllTargetsToMapAsync(int personId)
         {
             try
             {

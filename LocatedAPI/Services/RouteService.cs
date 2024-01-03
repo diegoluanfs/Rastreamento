@@ -32,6 +32,20 @@ namespace LocatedAPI.Services
                 throw new Exception("Houve um erro ao buscar todas as pessoas", ex);
             }
         }
+        
+        public async Task<List<RouteComplete>> GetAllRoutesByIdListAsync(List<int> idsList)
+        {
+            try
+            {
+                var routes = await routeRepository.GetAllRoutesByIdListAsync(idsList);
+
+                return routes;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Houve um erro ao buscar todas as pessoas", ex);
+            }
+        }
 
         public async Task<List<TargetRoute>> GetRouteByIdAsync(int idTarget, PersonIdentifyReq personIdentify)
         {
@@ -63,7 +77,6 @@ namespace LocatedAPI.Services
             var resp = await routeRepository.SaveRouteAsync(targetRoute);
             return resp;
         }
-
 
     }
 }

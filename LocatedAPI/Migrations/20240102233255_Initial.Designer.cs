@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LocatedAPI.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20231230183535_Initial")]
+    [Migration("20240102233255_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,6 +78,9 @@ namespace LocatedAPI.Migrations
 
                     b.Property<double>("LongitudeStart")
                         .HasColumnType("float");
+
+                    b.Property<bool>("Started")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

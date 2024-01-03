@@ -198,7 +198,7 @@ function GetTargets() {
 
         // AJAX request to fetch targets
         $.ajax({
-            url: url_base + '/api/targets',
+            url: url_base + '/api/targetstomap',
             type: 'GET',
             headers: headers,
             success: function (result) {

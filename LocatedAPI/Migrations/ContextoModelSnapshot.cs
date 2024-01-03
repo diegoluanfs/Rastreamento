@@ -77,6 +77,9 @@ namespace LocatedAPI.Migrations
                     b.Property<double>("LongitudeStart")
                         .HasColumnType("float");
 
+                    b.Property<bool>("Started")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.ToTable("Targets");

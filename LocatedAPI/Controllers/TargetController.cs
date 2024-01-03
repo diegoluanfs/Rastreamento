@@ -39,6 +39,44 @@ public class TargetController : ControllerBase
             return StatusCode(500, "Erro interno do servidor");
         }
     }
+    
+    [Authorize]
+    [HttpGet("targets/dashboard")]
+    public async Task<ActionResult<DashboardResult>> GetAllTargetsToDashboardAsync()
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var personIdentify = new PersonIdentifyReq { UserId = userId };
+
+            var routeCompletes = await targetService.GetAllTargetsToDashboardAsync(personIdentify);
+
+            return Ok(routeCompletes);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, "Erro interno do servidor");
+        }
+    }
+
+    [Authorize]
+    [HttpGet("targetsToMap")]
+    public async Task<ActionResult<List<Target>>> GetAllTargetsToMapAsync()
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var personIdentify = new PersonIdentifyReq { UserId = userId };
+
+            var targets = await targetService.GetAllTargetsToMapAsync(personIdentify);
+
+            return Ok(targets);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, "Erro interno do servidor");
+        }
+    }
 
     [Authorize]
     [HttpGet("target/{id}")]
@@ -53,14 +91,13 @@ public class TargetController : ControllerBase
 
             if (target == null)
             {
-                return NotFound(); // ou outra resposta adequada para quando o alvo não for encontrado
+                return NotFound();
             }
 
             return Ok(target);
         }
         catch (Exception ex)
         {
-            // Trate a exceção conforme necessário
             return StatusCode(500, "Erro interno do servidor");
         }
     }
@@ -98,10 +135,6 @@ public class TargetController : ControllerBase
         }
         catch (Exception ex)
         {
-            // Logue a exceção para análise
-            Console.WriteLine(ex);
-
-            // Trate a exceção conforme necessário
             return StatusCode(500, "Erro interno do servidor");
         }
     }

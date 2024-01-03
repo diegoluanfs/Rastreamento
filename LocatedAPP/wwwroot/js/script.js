@@ -45,6 +45,9 @@ $(document).ready(function () {
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="./map.html">Mapa</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./dashboard.html">Dashboard</a>
+                </li>
             </ul>
 
             <div class="my-2 mr-2" id="">Ol&aacute; `+ name + `</div>

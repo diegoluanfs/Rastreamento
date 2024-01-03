@@ -6,6 +6,7 @@ namespace LocatedAPI.Repositories
     public interface IRouteRepository
     {
         Task<List<TargetRoute>> GetAllRoutesAsync(int personId);
+        Task<List<RouteComplete>> GetAllRoutesByIdListAsync(List<int> idsList);
         Task<List<TargetRoute>> GetRouteByIdAsync(int id, int personId);
         Task<int> SaveRouteAsync(TargetRoute targetRoute);
     }
