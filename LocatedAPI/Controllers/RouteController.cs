@@ -53,14 +53,13 @@ public class RouteController : ControllerBase
 
             if (route == null)
             {
-                return NotFound(); // ou outra resposta adequada para quando o alvo não for encontrado
+                return NotFound();
             }
 
             return Ok(route);
         }
         catch (Exception ex)
         {
-            // Trate a exceção conforme necessário
             return StatusCode(500, "Erro interno do servidor");
         }
     }
@@ -86,10 +85,8 @@ public class RouteController : ControllerBase
         }
         catch (Exception ex)
         {
-            // Logue a exceção para análise
             Console.WriteLine(ex);
 
-            // Trate a exceção conforme necessário
             return StatusCode(500, "Erro interno do servidor");
         }
     }

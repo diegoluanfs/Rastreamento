@@ -56,7 +56,6 @@ $(document).ready(function () {
             </form>
         </div>`;
 
-        // Adiciona o conteúdo ao elemento com o ID "header-verify"
         $("#header-verify").html(headerContent);
     }
     //#endregion
@@ -77,7 +76,6 @@ $(document).ready(function () {
 
     //#region login
     $('#login-access').on('click', function () {
-        // Dados a serem enviados no corpo da requisição
         var requestData = {
             "username": $('#username').val(),
             "password": $('#password').val()
@@ -91,7 +89,6 @@ $(document).ready(function () {
             success: function (result) {
 
                 if (result.statusCode === 200 && result.token) {
-                    // Armazenar uma informação no localStorage
                     localStorage.setItem('Token-Located', result.token);
                     localStorage.setItem('Username-Located', $('#username').val());
 

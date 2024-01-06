@@ -42,7 +42,7 @@ public class PersonController : ControllerBase
         {
             var errorResponse = new ApiResp
             {
-                StatusCode = 500, // 500 Internal Server Error
+                StatusCode = 500,
                 Message = ex.Message
             };
 
@@ -80,7 +80,7 @@ public class PersonController : ControllerBase
         {
             var errorResponse = new ApiResp
             {
-                StatusCode = 500, // 500 Internal Server Error
+                StatusCode = 500,
                 Message = ex.Message
             };
 

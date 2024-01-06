@@ -341,10 +341,6 @@
       "PackagePath": "staticwebassets\\js\\jquery.marquee.min.js"
     },
     {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\map-target.js",
-      "PackagePath": "staticwebassets\\js\\map-target.js"
-    },
-    {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\map.js",
       "PackagePath": "staticwebassets\\js\\map.js"
     },
@@ -363,10 +359,6 @@
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\login.html",
       "PackagePath": "staticwebassets\\login.html"
-    },
-    {
-      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map-target.html",
-      "PackagePath": "staticwebassets\\map-target.html"
     },
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map.html",

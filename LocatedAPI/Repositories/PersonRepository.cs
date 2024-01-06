@@ -149,10 +149,8 @@ namespace LocatedAPI.Repositories
         {
             try
             {
-                // Utilize Attach para anexar o objeto ao contexto, se necessário
                 contexto.Persons.Attach(person);
 
-                // Ou utilize Update para começar a rastrear o objeto
                 contexto.Persons.Update(person);
 
                 await contexto.SaveChangesAsync();

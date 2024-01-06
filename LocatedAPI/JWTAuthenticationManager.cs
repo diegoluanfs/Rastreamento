@@ -4,7 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks; // Adicionado para suporte a Task
+using System.Threading.Tasks;
 
 namespace LocatedAPI
 {
@@ -35,9 +35,9 @@ namespace LocatedAPI
                     Subject = new ClaimsIdentity(new Claim[]
                     {
                 new Claim(ClaimTypes.Name, username),
-                new Claim(ClaimTypes.NameIdentifier, id.ToString()), // Adiciona a reivindicação do ID
+                new Claim(ClaimTypes.NameIdentifier, id.ToString()),
                     }),
-                    Expires = DateTime.UtcNow.AddHours(1), // Defina o tempo de expiração conforme necessário
+                    Expires = DateTime.UtcNow.AddHours(1),
                     SigningCredentials = new SigningCredentials(
                         new SymmetricSecurityKey(key),
                         SecurityAlgorithms.HmacSha256Signature)
@@ -48,8 +48,6 @@ namespace LocatedAPI
             }
             catch (Exception ex)
             {
-                // Adicione um tratamento de erro adequado, como log ou rethrow da exceção.
-                // Aqui, a exceção está sendo relançada, mas você pode personalizar conforme necessário.
                 throw new Exception("Erro ao autenticar usuário.", ex);
             }
         }

@@ -7,7 +7,7 @@ var headers = {
     'Content-Type': 'application/json'
 };
 
-$('.btn-target').on('click', function () {
+$('.btn-new-obj').on('click', function () {
     $.ajax({
         url: url_base + '/api/target',
         type: 'POST',

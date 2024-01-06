@@ -120,16 +120,6 @@ namespace LocatedAPI.Services
         {
             try
             {
-                //if (await NameAlreadyExistsAsync(personSignUpReq.Username))
-                //{
-                //    throw new Exception("Já existe um usuário com o nome " + personSignUpReq.Username);
-                //}
-
-                //if (await EmailAlreadyExistsAsync(personSignUpReq.Email))
-                //{
-                //    throw new Exception("Já existe um usuário cadastrado com esse e-mail " + personSignUpReq.Email);
-                //}
-
                 Person person = new Person();
                 person.Username = personSignUpReq.Username;
                 person.Password = personSignUpReq.Password;
@@ -139,7 +129,6 @@ namespace LocatedAPI.Services
             }
             catch (Exception ex)
             {
-                // Inclua detalhes específicos da exceção relevante para a resposta.
                 throw new Exception("Houve um erro ao criar a pessoa.", ex);
             }
         }

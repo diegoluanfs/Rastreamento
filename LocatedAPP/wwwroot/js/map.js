@@ -1,27 +1,20 @@
 
-// Base URL for API requests
 var url_base = 'http://localhost:5291';
 
-// Retrieve token from local storage
 var valorArmazenado = localStorage.getItem('Token-Located');
 
-// Array to store location data
 var locationsMax = [];
 
-// Mapbox access token
 ACCESS_TOKEN_MAPBOX = 'pk.eyJ1IjoiZGllZ29sdWFuZnMiLCJhIjoiY2xxZHJnOWE0MGV6MzJpcGxtdnJwY25pYyJ9.V9llMCoz-QmkNpSXxAgj8Q';
 
-// Inicializa os marcadores e as posições
 const markers = [];
 
-var routeCoordinatesArray = []; // Nova variável para armazenar os dados das coordenadas das rotas
+var routeCoordinatesArray = [];
 var positionsDescription = [];
 
 if (valorArmazenado) {
-    // Set Mapbox access token
     mapboxgl.accessToken = ACCESS_TOKEN_MAPBOX;
 
-    // Create Mapbox map
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v12',
@@ -30,19 +23,15 @@ if (valorArmazenado) {
         interactive: true
     });
 
-    // Fetch targets and process the result
     GetTargets().then(function (result) {
-        // Check if the result is an array and not empty
         if (Array.isArray(result) && result.length > 0) {
             result.forEach(function (item) {
-                // Create start location object
                 var locationStart = {
                     coordinates: [item.latitudeStart, item.longitudeStart],
                     name: 'Ponto ' + item.id,
                     color: item.color
                 };
 
-                // Create end location object
                 var locationEnd = {
                     coordinates: [item.latitudeEnd, item.longitudeEnd],
                     name: 'Ponto ' + item.id,
@@ -56,7 +45,6 @@ if (valorArmazenado) {
 
                 positionsDescription.push(info);
 
-                // Add locations to the array
                 locationsMax.push(locationStart);
                 locationsMax.push(locationEnd);
             });
@@ -64,9 +52,7 @@ if (valorArmazenado) {
             console.log('A lista está vazia ou não é um array.');
         }
 
-        // After the map loads
         map.on('load', () => {
-            // Add markers to the map
             for (let i = 0; i < locationsMax.length; i++) {
                 const location = locationsMax[i];
 
@@ -76,14 +62,12 @@ if (valorArmazenado) {
                     .addTo(map);
             }
 
-            // Add routes and directions to the map
             for (let i = 0; i < locationsMax.length; i += 2) {
                 const startLocation = locationsMax[i];
                 const endLocation = locationsMax[i + 1];
 
                 const coordinates = [startLocation.coordinates, endLocation.coordinates];
 
-                // Request optimized route directions from Mapbox
                 axios.get(`https://api.mapbox.com/directions/v5/mapbox/driving/${coordinates[0][0]},${coordinates[0][1]};${coordinates[1][0]},${coordinates[1][1]}`, {
                     params: {
                         steps: true,
@@ -94,14 +78,11 @@ if (valorArmazenado) {
                     }
                 }).then(response => {
 
-                    // Armazene os dados das coordenadas das rotas
                     routeCoordinatesArray.push(response.data.routes[0].geometry.coordinates);
 
-                    // Process the route response
                     const route = response.data.routes[0];
                     const routeCoordinates = route.geometry.coordinates;
 
-                    // Add route source to the map
                     map.addSource(`route-${i}`, {
                         'type': 'geojson',
                         'data': {
@@ -114,7 +95,6 @@ if (valorArmazenado) {
                         }
                     });
 
-                    // Add route layer to the map
                     map.addLayer({
                         'id': `route-${i}`,
                         'type': 'line',
@@ -129,7 +109,6 @@ if (valorArmazenado) {
                         }
                     });
 
-                    // Add route steps source to the map
                     map.addSource(`route-steps-${i}`, {
                         'type': 'geojson',
                         'data': {
@@ -142,7 +121,6 @@ if (valorArmazenado) {
                         }
                     });
 
-                    // Add route steps layer to the map
                     map.addLayer({
                         'id': `route-steps-${i}`,
                         'type': 'line',
@@ -157,17 +135,15 @@ if (valorArmazenado) {
                         }
                     });
 
-                    // Adiciona marcadores vermelhos nos primeiros pontos de cada vetor
                     routeCoordinatesArray.forEach((coordinates, index) => {
                         if (coordinates.length > 0) {
                             const firstPoint = coordinates[0];
-                            const marker = new mapboxgl.Marker({ color: 'red' }) // Defina a cor como vermelha
+                            const marker = new mapboxgl.Marker({ color: 'red' })
                                 .setLngLat(firstPoint)
                                 .addTo(map);
 
                             markers.push(marker)
 
-                            // Adicione um popup se desejar
                             const popup = new mapboxgl.Popup().setHTML(`<h3>Marker ${index}</h3>`);
                             marker.setPopup(popup);
                         }
@@ -184,19 +160,15 @@ if (valorArmazenado) {
     console.log("não existe token")
 }
 
-// Function to fetch targets
 function GetTargets() {
     return new Promise(function (resolve, reject) {
-        // Retrieve token from local storage
         var token = localStorage.getItem('Token-Located');
 
-        // Headers for the API request
         var headers = {
             'Authorization': 'Bearer ' + token,
             'Content-Type': 'application/json'
         };
 
-        // AJAX request to fetch targets
         $.ajax({
             url: url_base + '/api/targetstomap',
             type: 'GET',
@@ -223,15 +195,12 @@ function GetTargets() {
 const markerPositions = [];
 const routesPositions = [];
 
-// Define o intervalo (em milissegundos)
-const intervalo = 100; // 5 segundos
+const intervalo = 100;
 
 function markersMoving() {
     const numberOfRoutes = routeCoordinatesArray.length;
 
-    // Verifica se numberOfRoutes é menor ou igual a 0
     if (numberOfRoutes <= 0) {
-        // Faça o que você precisa fazer enquanto numberOfRoutes é menor ou igual a 0
     } else {
         for (let i = 0; i < numberOfRoutes; i++) {
             markerPositions.push(i);
@@ -240,7 +209,6 @@ function markersMoving() {
     }
 }
 
-// Inicia o intervalo apenas se numberOfRoutes for menor ou igual a 0
 if (routeCoordinatesArray.length <= 0) {
     setInterval(markersMoving, intervalo);
 }
@@ -268,7 +236,6 @@ function updateMarkerPositions() {
                 const currentPointIndex = markerPositions[i];
                 const nextIndex = (currentPointIndex + 1) % route.length;
 
-                // Obtém as coordenadas da rota específica
                 const coordinates = route[nextIndex];
 
                 const lngLat = new mapboxgl.LngLat(coordinates[0], coordinates[1]);
@@ -279,15 +246,11 @@ function updateMarkerPositions() {
                     longitude: coordinates[0]
                 }
 
-                // Verifica se o marcador correspondente existe antes de tentar atualizar
                 if (markers[i]) {
-                    // Atualiza a posição do marcador
                     markers[i].setLngLat(lngLat);
 
-                    // Atualiza o índice da próxima posição
                     markerPositions[i] = nextIndex;
 
-                    // Verifica se é a última posição
                     if (nextIndex === route.length - 1) {
                         positionsFinished.push(i);
                     }
@@ -326,7 +289,7 @@ function SaveData(partial, positionsDescription) {
         contentType: 'application/json',
         data: JSON.stringify(vetorReq),
         success: function (result) {
-            //console.log("result: ", result);
+            console.log("result: ", result);
         },
         error: function (error) {
             Swal.fire({
@@ -340,6 +303,4 @@ function SaveData(partial, positionsDescription) {
     });
 }
 
-
-// Inicia a execução da função em intervalos regulares
 const idIntervalo = setInterval(updateMarkerPositions, intervalo);
