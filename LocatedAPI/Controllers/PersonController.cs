@@ -118,11 +118,11 @@ public class PersonController : ControllerBase
 
     [Authorize]
     [HttpPut("persons")]
-    public async Task<IActionResult> PutAsync([FromBody] PersonReq person)
+    public async Task<IActionResult> PutAsync([FromBody] PerfilReq perfil)
     {
         try
         {
-            var success = await personService.UpdatePersonAsync(person);
+            var success = await personService.UpdatePersonAsync(perfil);
 
             if (!success)
             {

@@ -345,6 +345,10 @@
       "PackagePath": "staticwebassets\\js\\map.js"
     },
     {
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\my-obj.js",
+      "PackagePath": "staticwebassets\\js\\my-obj.js"
+    },
+    {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\perfil.js",
       "PackagePath": "staticwebassets\\js\\perfil.js"
     },
@@ -363,6 +367,10 @@
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\map.html",
       "PackagePath": "staticwebassets\\map.html"
+    },
+    {
+      "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\my-targets.html",
+      "PackagePath": "staticwebassets\\my-targets.html"
     },
     {
       "Id": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\password.html",

@@ -12,7 +12,7 @@ namespace LocatedAPI.Services
         Task<bool> EmailAlreadyExistsAsync(string name);
         Task<bool> ValidUserAndPassword(string username, string password);
         Task<int> CreatePersonAsync(PersonSignUpReq person);
-        Task<bool> UpdatePersonAsync(PersonReq person);
+        Task<bool> UpdatePersonAsync(PerfilReq person);
         Task<bool> DeletePersonAsync(int id);
         Task<string> AuthenticateAsync(PersonSignInReq person);
     }

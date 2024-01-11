@@ -8,6 +8,7 @@ namespace LocatedAPI.Data
         public DbSet<Person> Persons { get; set; }
         public DbSet<Target> Targets { get; set; }
         public DbSet<TargetRoute> Routes { get; set; }
+        public DbSet<Item> Items { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder opt)
         {

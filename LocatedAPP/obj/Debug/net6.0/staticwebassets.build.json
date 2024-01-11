@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sc6W2n13KsGRAL+wHCNqTwuEIRcaBIXJklwOrT/nrv4=",
+  "Hash": "LX5xx2Hi61MLYH65tyRPrjFVnCLHXf7wrtMeMsk8gkg=",
   "Source": "LocatedAPP",
   "BasePath": "_content/LocatedAPP",
   "Mode": "Default",
@@ -1479,6 +1479,23 @@
       "OriginalItemSpec": "wwwroot\\js\\map.js"
     },
     {
+      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\my-obj.js",
+      "SourceId": "LocatedAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
+      "BasePath": "_content/LocatedAPP",
+      "RelativePath": "js/my-obj.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\my-obj.js"
+    },
+    {
       "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\js\\perfil.js",
       "SourceId": "LocatedAPP",
       "SourceType": "Discovered",
@@ -1562,6 +1579,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\map.html"
+    },
+    {
+      "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\my-targets.html",
+      "SourceId": "LocatedAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\",
+      "BasePath": "_content/LocatedAPP",
+      "RelativePath": "my-targets.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\my-targets.html"
     },
     {
       "Identity": "D:\\Diego\\Projetos-2023\\dotNet\\Rastreamento\\LocatedAPP\\wwwroot\\password.html",

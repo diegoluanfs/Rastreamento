@@ -40,14 +40,14 @@ $('.button').on('click', function () {
             icon: "error",
             title: "Oops...",
             text: "Os emails devem ser iguais!",
-            footer: '<a href="#">Why do I have this issue?</a>'
+            footer: '<a href="#"></a>'
         });
     } else if ($('#password').val() != $('#cpassword').val()) {
         Swal.fire({
             icon: "error",
             title: "Oops...",
             text: "As senhas devem ser iguais!",
-            footer: '<a href="#">Why do I have this issue?</a>'
+            footer: '<a href="#"><a>'
         });
     } else {
         var username = $('#username').val();

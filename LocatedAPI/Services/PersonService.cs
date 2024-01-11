@@ -133,21 +133,21 @@ namespace LocatedAPI.Services
             }
         }
 
-        public async Task<bool> UpdatePersonAsync(PersonReq personReq)
+        public async Task<bool> UpdatePersonAsync(PerfilReq perfilReq)
         {
             try
             {
                 Person person = new Person();
-                person.Id = personReq.Id;
-                person.Username = personReq.Username;
-                person.Email = personReq.Email;
-                person.Password = personReq.Password;
+                person.Id = perfilReq.Id;
+                person.Username = perfilReq.Username;
+                person.Email = perfilReq.Email;
+                person.Password = "12345";
 
                 return await personRepository.UpdateAsync(person);
             }
             catch (Exception ex)
             {
-                throw new Exception($"Houve um erro ao atualizar a pessoa com o ID {personReq.Id}", ex);
+                throw new Exception($"Houve um erro ao atualizar a pessoa com o ID {perfilReq.Id}", ex);
             }
         }
 
